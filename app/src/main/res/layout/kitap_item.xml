@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:background="#FFF"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:id="@+id/kitap_item_imageViewKitapResim"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitap Adı:"
+            android:textColor="@color/kitapItemTextColor"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/kitap_item_textViewKitapAdi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitap Yazari:"
+            android:textColor="@color/kitapItemTextColor"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/kitap_item_textViewKitapYazari"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kitap Ozeti:"
+            android:textColor="@color/kitapItemTextColor"
+            android:textSize="17sp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:id="@+id/kitap_item_textViewKitapOzeti"/>
+
+
+
+        
+    </LinearLayout>
+
+</LinearLayout>

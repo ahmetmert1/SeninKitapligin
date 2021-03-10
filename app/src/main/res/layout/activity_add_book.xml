@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBookActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/add_book_activity_imageViewBookImage"
+                android:layout_width="240dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:onClick="resimSec"
+                android:scaleType="fitXY"
+                android:src="@drawable/resimekle" />
+
+
+            <EditText
+                android:id="@+id/add_book_activity_textViewKitapIsmi"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:hint="Kitap adını giriniz." />
+
+            <EditText
+                android:id="@+id/add_book_activity_textViewKitapYazari"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Kitabın yazarını giriniz." />
+
+            <EditText
+                android:id="@+id/add_book_activity_textViewKitapOzeti"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:hint="Kitabın özetini giriniz."
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/add_book_activity_btnKaydet"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/buttonshape"
+                android:enabled="false"
+                android:onClick="kitapKaydet"
+                android:text="Kaydet"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:layout_marginBottom="25dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
